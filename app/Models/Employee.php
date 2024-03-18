@@ -28,8 +28,8 @@ class Employee extends Model
         return $this->hasMany(Ubs::class);
     }
 
-    public function job_role_id()
+    public function jobRole()
     {
-        return $this->hasOne(JobRole::class);
+        return $this->belongsTo(JobRole::class);
     }
 }

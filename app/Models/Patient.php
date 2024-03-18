@@ -25,6 +25,11 @@ class Patient extends Model
 
     public function ubs()
     {
-        return $this->hasMany(Ubs::class);
+        return $this->hasOne(Ubs::class);
     }
+
+//    public function vaccine()
+//    {
+//        return $this->hasMany(Vaccines::class);
+//    }
 }

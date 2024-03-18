@@ -62,7 +62,7 @@ class EmployeeResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('job_role_id')
+                Tables\Columns\TextColumn::make('jobRole.name')
                     ->label('Função')
                     ->numeric()
                     ->sortable(),

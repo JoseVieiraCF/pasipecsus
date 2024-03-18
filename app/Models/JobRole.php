@@ -13,8 +13,8 @@ class JobRole extends Model
         'name'
     ];
 
-    public function employee()
-    {
-        return $this->belongsToMany(Employee::class);
-    }
+//    public function employee()
+//    {
+//        return $this->belongsToMany(Employee::class);
+//    }
 }
